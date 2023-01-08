@@ -18,11 +18,6 @@ const flags = parse(args);
 const config = join(repository,flags.config);
 
 
-
-for await ( const file of walk(join(repository,'.github'),{ maxDepth : 1 }) )
-    log(file.path);
-
-
 const { readTextFile } = Deno;
 
 await readTextFile(config)
