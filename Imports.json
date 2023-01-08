@@ -2,6 +2,7 @@
     "imports" : {
 
         "FileSystem" : "https://deno.land/std@0.171.0/fs/mod.ts" ,
+        "Flags" : "https://deno.land/std@0.171.0/flags/mod.ts" ,
         "Chunk" : "https://deno.land/std@0.171.0/collections/chunk.ts" ,
         "YAML" : "https://deno.land/std@0.171.0/encoding/yaml.ts" ,
         "Path" : "https://deno.land/std@0.171.0/path/mod.ts" ,

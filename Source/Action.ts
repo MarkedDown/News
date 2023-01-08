@@ -1,6 +1,7 @@
 
 
 import { walk } from 'FileSystem'
+import { parse } from 'Flags'
 
 const { log } = console;
 
@@ -8,6 +9,8 @@ const { log } = console;
 log('Testing',import.meta.url);
 
 
+const flags = parse(Deno.args);
+log('Flags',flags);
 
 const config = Deno.env.get('INPUT_CONFIG');
 

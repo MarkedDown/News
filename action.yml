@@ -35,10 +35,10 @@ runs:
 
             shell : bash
             run : |
-                export INPUT_CONFIG=${{ env.config }} &&              \
                 deno run                                            \
                     --allow-write=.                                 \
                     --allow-read                                  \
                     --allow-env                        \
                     --import-map=$GITHUB_ACTION_PATH/Imports.json   \
-                    $GITHUB_ACTION_PATH/Source/Action.ts
+                    $GITHUB_ACTION_PATH/Source/Action.ts \
+                    --config=${{ env.config }}
