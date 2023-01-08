@@ -34,6 +34,8 @@ await readTextFile(config)
             The given config path cannot be found!
             Path : \`${ config }\`
         `)
+
+        Deno.exit(1);
     })
 
 function loadConfig ( text : string ){
