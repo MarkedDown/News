@@ -1,5 +1,7 @@
 
 
+import { walk } from 'FileSystem'
+
 const { log } = console;
 
 
@@ -13,5 +15,9 @@ log('Config',config,Deno.env.toObject());
 
 // if(config)
 
-log(await Deno.readTextFile(Deno.env.get('GITHUB_ENV') as string));
+log('env',await Deno.readTextFile(Deno.env.get('GITHUB_ENV') as string));
+
+for await ( const file of walk(Deno.env.get('GITHUB_WORKSPACE') as string,{
+    maxDepth : 1
+})) log(file.path);
 
