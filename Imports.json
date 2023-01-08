@@ -7,6 +7,8 @@
         "YAML" : "https://deno.land/std@0.171.0/encoding/yaml.ts" ,
         "Path" : "https://deno.land/std@0.171.0/path/mod.ts" ,
 
+        "Actions" : "npm:@actions/core" ,
+
         "Paths" : "./Source/Paths.ts"
     }
 }

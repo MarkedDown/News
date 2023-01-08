@@ -1,7 +1,7 @@
 
 
+import { setFailed } from 'Actions'
 import { parse } from 'Flags'
-import { walk } from 'FileSystem'
 import { join } from 'Path'
 
 
@@ -24,8 +24,19 @@ log(`
 `)
 
 
-for await ( const file of walk(repository,{ maxDepth : 1 }) )
-    log(file.path);
+const { readTextFile } = Deno;
 
+await readTextFile(config)
+    .then(loadConfig)
+    .catch(() => {
 
-log('Config',await Deno.readTextFile(config));
+        setFailed(`
+            The given config path cannot be found!
+            Path : \`${ config }\`
+        `)
+    })
+
+function loadConfig ( text : string ){
+
+    log('Config',text);
+}
