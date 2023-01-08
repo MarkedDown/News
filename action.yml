@@ -35,6 +35,7 @@ runs:
 
             shell : bash
             run : |
+                export INPUT_CONFIG=${{ env.config }}               \
                 deno run                                            \
                     --allow-write=.                                 \
                     --allow-read                                  \
