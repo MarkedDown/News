@@ -9,7 +9,7 @@ log('Testing',import.meta.url);
 
 const config = Deno.env.get('INPUT_CONFIG');
 
-log('Config',config);
+log('Config',config,Deno.env.toObject());
 
 if(config)
     log(await Deno.readTextFile(config));
