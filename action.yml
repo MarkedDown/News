@@ -1,0 +1,35 @@
+
+name : News Section
+
+description : |
+    Updates / injects a news section generated from the info you supply.
+
+author : ElectronicsArchiver
+
+branding:
+
+    color : green
+    icon : file-text
+
+inputs:
+
+    config:
+
+        description : A relative repository path to your config file.
+
+        default : .github/.News.yaml
+
+runs:
+
+    using : composite
+
+    steps:
+
+        -   name : Setup Deno
+            uses : denoland/setup-deno@v1
+            with :
+
+                deno-version : '1.29.2'
+
+        -   name : Run News Section
+            run : deno run $GITHUB_ACTION_PATH/Source/Action.ts
