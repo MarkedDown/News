@@ -18,12 +18,6 @@ const flags = parse(args);
 const config = join(repository,flags.config);
 
 
-log(`
-    Repository : ${ repository }
-    Config : ${ config }
-`)
-
-
 const { readTextFile } = Deno;
 
 await readTextFile(config)
@@ -35,7 +29,7 @@ await readTextFile(config)
             Path : \`${ config }\`
         `)
 
-        Deno.exit(1);
+        Deno.exit();
     })
 
 function loadConfig ( text : string ){
