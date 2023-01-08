@@ -36,9 +36,9 @@ runs:
             shell : bash
             run : |
                 deno run                                            \
-                    --allow-write=.                                 \
-                    --allow-read                                  \
-                    --allow-env                        \
-                    --import-map=$GITHUB_ACTION_PATH/Imports.json   \
-                    $GITHUB_ACTION_PATH/Source/Action.ts \
-                    --config=${{ inputs.config }}
+                    --allow-write="$GITHUB_WORKSPACE"               \
+                    --allow-read="$GITHUB_WORKSPACE"                \
+                    --import-map="$GITHUB_ACTION_PATH/Imports.json" \
+                    --allow-env=GITHUB_WORKSPACE                    \
+                    "$GITHUB_ACTION_PATH/Source/Action.ts"          \
+                    --config="${{ inputs.config }}"

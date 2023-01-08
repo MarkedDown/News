@@ -1,26 +1,31 @@
 
 
-import { walk } from 'FileSystem'
 import { parse } from 'Flags'
+import { walk } from 'FileSystem'
+import { join } from 'Path'
 
+
+const { args , env } = Deno;
 const { log } = console;
 
 
-log('Testing',import.meta.url);
+const repository = env.get('GITHUB_WORKSPACE') as string;
 
 
-const flags = parse(Deno.args);
-log('Flags',flags);
+const flags = parse(args);
 
-const config = Deno.env.get('INPUT_CONFIG');
 
-log('Config',config,Deno.env.toObject());
+const config = join(repository,flags.config);
 
-// if(config)
 
-log('env',await Deno.readTextFile(Deno.env.get('GITHUB_ENV') as string));
+log(`
+    Repository : ${ repository }
+    Config : ${ config }
+`)
 
-for await ( const file of walk(Deno.env.get('GITHUB_WORKSPACE') as string,{
-    maxDepth : 1
-})) log(file.path);
 
+for await ( const file of walk(repository,{ maxDepth : 1 }) )
+    log(file.path);
+
+
+log('Config',await Deno.readTextFile(config));
