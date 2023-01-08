@@ -37,7 +37,7 @@ runs:
             run : |
                 deno run                                            \
                     --allow-write=.                                 \
-                    --allow-read=.                                  \
+                    --allow-read                                  \
                     --allow-env                        \
                     --import-map=$GITHUB_ACTION_PATH/Imports.json   \
                     $GITHUB_ACTION_PATH/Source/Action.ts
