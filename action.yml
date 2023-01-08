@@ -16,8 +16,7 @@ inputs:
     config:
 
         description : A relative repository path to your config file.
-
-        default : .github/.News.yaml
+        required : true
 
 runs:
 
