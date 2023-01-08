@@ -27,4 +27,6 @@ jobs:
 
             -   name : Setup News
                 uses : ./
+                with :
 
+                    config : .github/News.yaml

@@ -35,4 +35,10 @@ runs:
         -   name : Run News Section
 
             shell : bash
-            run : deno run $GITHUB_ACTION_PATH/Source/Action.ts
+            run : |
+                deno run                                            \
+                    --allow-write=.                                 \
+                    --allow-read=.                                  \
+                    --allow-env=INPUT_CONFIG                        \
+                    --import-map=$GITHUB_ACTION_PATH/Imports.json   \
+                    $GITHUB_ACTION_PATH/Source/Action.ts
