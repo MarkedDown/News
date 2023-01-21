@@ -24,25 +24,25 @@
 #
 
 
--   title : 🔬 Testing
+-   title : 🖇 GitHub Action
 
     lines : |
-        This is a test message!
+        This markdown generator can be used in workflows!
 
 
--   title : 🔬 Testing
-
-    lines : |
-        This is a test message!
-
-
--   title : 🔬 Testing
+-   title : 📝 Configurable
 
     lines : |
-        This is a test message!
+        You can build multiple sections and specify paths.
 
 
--   title : 🔬 Testing
+-   title : 📰 Articles
 
     lines : |
-        This is a test message!
+        You can add titles, multiple lines and links!
+
+
+-   title : 📍 Marked Insertion
+
+    lines : |
+        The built content is inserted between markers.

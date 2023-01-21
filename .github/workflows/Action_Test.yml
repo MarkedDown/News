@@ -9,9 +9,18 @@ on:
 
         branches : [ main ]
 
+        paths :
+
+            -   'Example/**'
+
     push:
 
         branches : [ main ]
+
+        paths :
+
+            -   'Example/**'
+
 
 
 jobs:

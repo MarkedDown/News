@@ -27,6 +27,5 @@
 #                                                                              #
 
 
--   Inject : Example/README.md
+-   Inject : README.md
     Input : Example/News.yaml
-
