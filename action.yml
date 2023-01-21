@@ -40,5 +40,5 @@ runs:
                     --allow-read="$GITHUB_WORKSPACE"                \
                     --import-map="$GITHUB_ACTION_PATH/Imports.json" \
                     --allow-env=GITHUB_WORKSPACE                    \
-                    "$GITHUB_ACTION_PATH/Source/Action.ts"          \
+                    "$GITHUB_ACTION_PATH/Source/App.ts"             \
                     --config="${{ inputs.config }}"
