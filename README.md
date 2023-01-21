@@ -15,8 +15,15 @@
 
 *A small markdown text renderer*
 
+
+<br>
+<br>
+
+[![Button Usage]][Usage]
+
 </div>
 
+<br>
 <br>
 
 <!---------------------------------- 🗞 News ---------------------------------->
@@ -28,7 +35,6 @@
 </pre>
  
 <!---------------------------------- 🗞 News ---------------------------------->
-
 
 <br>
 <br>
@@ -46,6 +52,7 @@
 [#]: #
 
 [Action]: https://github.com/marketplace/actions/news-section
+[Usage]: https://github.com/MarkedDown/News/tree/main/Documentation/Usage.md
 
 
 <!---------------------------------[ Badges ]---------------------------------->
@@ -53,3 +60,8 @@
 [Badge License]: https://img.shields.io/badge/License-AGPL3-015d93.svg?style=for-the-badge&labelColor=blue
 [Badge Action]: https://img.shields.io/badge/Action-News--Section-28a745.svg?style=for-the-badge&labelColor=28a745&color=228d39&logoColor=white&logo=GitHubActions
 [Badge Likes]: https://img.shields.io/github/stars/MarkedDown/News?style=for-the-badge&labelColor=d0ab23&color=b0901e&logoColor=white&logo=Trustpilot
+
+
+<!---------------------------------[ Buttons ]--------------------------------->
+
+[Button Usage]: https://img.shields.io/badge/Usage-007ec6?style=for-the-badge&logoColor=white&logo=GitBook
