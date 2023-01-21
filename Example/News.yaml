@@ -18,31 +18,35 @@
 #   Warning:
 #   --------
 #
-#   Lines shouldn't be longer than 50 characters.
+#   Lines shouldn't be longer than 40 characters.
 #
-##########################################################| Stop Here
+#######|<-------------------------------------->| Stop Here
 #
 
 
 -   title : 🖇 GitHub Action
 
     lines : |
-        This markdown generator can be used in workflows!
+        This markdown generator
+        can be used in workflows!
 
 
 -   title : 📝 Configurable
 
     lines : |
-        You can build multiple sections and specify paths.
+        You can build multiple sections
+        and specify their input / output.
 
 
 -   title : 📰 Articles
 
     lines : |
-        You can add titles, multiple lines and links!
+        You can add titles, use multiple
+        lines and links in your content!
 
 
 -   title : 📍 Marked Insertion
 
     lines : |
-        The built content is inserted between markers.
+        The generated content is placed
+        in between marker comments.
