@@ -1,0 +1,48 @@
+
+#
+#   News Articles
+#   =============
+#
+#   Structure:
+#   ----------
+#
+#   -   title : <Title>
+#
+#       lines : |
+#           <Line>
+#           <Line>
+#
+#       links :
+#           <Link Name> : <Url>
+#
+#   Warning:
+#   --------
+#
+#   Lines shouldn't be longer than 50 characters.
+#
+##########################################################| Stop Here
+#
+
+
+-   title : 🔬 Testing
+
+    lines : |
+        This is a test message!
+
+
+-   title : 🔬 Testing
+
+    lines : |
+        This is a test message!
+
+
+-   title : 🔬 Testing
+
+    lines : |
+        This is a test message!
+
+
+-   title : 🔬 Testing
+
+    lines : |
+        This is a test message!

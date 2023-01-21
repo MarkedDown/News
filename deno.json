@@ -2,7 +2,7 @@
     "importMap" : "Imports.json" ,
 
     "tasks" : {
-        "develop" : "deno run --watch=Source,.github/News.yaml --allow-env=INPUT_CONFIG --allow-read=. --allow-write=. Source/Action.ts --config=\".github/.News.yml\"" ,
-        "update" : "deno run --allow-env=INPUT_CONFIG --allow-read=. --allow-write=. Source/Action.ts --config=\".github/.News.yml\""
+        "develop" : "export GITHUB_WORKSPACE=. && deno run --watch=Source,.github/News.yaml --allow-env=GITHUB_WORKSPACE --allow-read=. --allow-write=. Source/App.ts --config=\".github/.News.yml\"" ,
+        "update" : "export GITHUB_WORKSPACE=. && deno run --allow-env=GITHUB_WORKSPACE --allow-read=. --allow-write=. Source/App.ts --config=\".github/.News.yml\""
     }
 }
